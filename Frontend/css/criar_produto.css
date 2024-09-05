@@ -37,7 +37,7 @@
 }
 
 #image {
-    width: 10vw;
+    width: 20vw;
     height: auto;
 }
 
@@ -90,7 +90,7 @@
 #main {
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    width: 90vw;
     height: 100vh;
     padding: 2rem;
     gap: 1.5rem;
@@ -101,7 +101,7 @@
     width: 11vw;
 }
 
-.form-criar-produto {
+.form-criar-Produto {
     display: flex;
     flex-direction: column;
     width: 50vh;

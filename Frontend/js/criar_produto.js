@@ -15,41 +15,38 @@ function criarproduto() {
 async function handleFormSubmit(event) {
     event.preventDefault();
 
-    const Nome = document.getElementById("Nome").value;
-    const População = document.getElementById("População").value;
-    const Estado = document.getElementById("Estado").value;
-    const País = document.getElementById("País").value;
+    const name = document.getElementById("name").value;
+    const preco = document.getElementById("preco").value;
+    const tipo = document.getElementById("Tipo").value;
 
     try {
-        const successMessage = await addCidade(Nome, População, Estado, País);
+        const successMessage = await addProduto(name, preco, tipo);
         console.log(successMessage); // Optional: Log success message
     } catch (error) {
-        console.error("Erro ao cadastrar cidade:", error.message);
+        console.error("Erro ao cadastrar o novo produto:", error.message);
         // Display a user-friendly error message based on the error object
     }
 }
 
 // Function to clear input fields
 function limparCampos() {
-    document.getElementById("Nome").value = "";
-    document.getElementById("População").value = "";
-    document.getElementById("Estado").value = "";
-    document.getElementById("País").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("preco").value = "";
+    document.getElementById("tipo").value = "";
 }
 
-// Function to add a new cidade
-async function addCidade(Nome, População, Estado, País) {
+// Function to add a new Produto
+async function addProduto(name, preco, tipo) {
     try {
-        const response = await fetch("http://localhost:3000/nova-cidade", {
+        const response = await fetch("http://localhost:3000/novo-produto", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                Nome,
-                População,
-                Estado,
-                País,
+                name,
+                preco,
+                tipo,
             }),
         });
 
@@ -59,9 +56,9 @@ async function addCidade(Nome, População, Estado, País) {
         } else {
             const data = await response.json();
             console.log(data);
-            alert(`Parabéns! Você cadastrou a cidade: ${Nome}`);
+            alert(`Parabéns! Você cadastrou o Produto: ${name}`);
             limparCampos();
-            return "Cidade cadastrada com sucesso!";
+            return "Produto cadastrado com sucesso!";
         }
     } catch (error) {
         console.error("Erro:", error.message);
@@ -70,5 +67,5 @@ async function addCidade(Nome, População, Estado, País) {
 }
 
 // Event listener for form submission
-const formCriarCidade = document.querySelector(".form-criar-cidade");
-formCriarCidade.addEventListener("submit", handleFormSubmit);
+const formCriarProduto = document.querySelector(".form-criar-Produto");
+formCriarProduto.addEventListener("submit", handleFormSubmit);

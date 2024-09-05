@@ -24,25 +24,21 @@
             </nav>
         </div>
         <main id="main" class="">
-            <h2 id="title" class="">Criar Cidade</h2>
-            <form class="form-criar-cidade">
+            <h2 id="title" class="">Criar Produto</h2>
+            <form class="form-criar-Produto">
                 <div class="form-texts">
-                    <label for="Nome" class="label">Nome</label>
-                    <input type="text" id="Nome" name="Nome" required class="input">
+                    <label for="name" class="label">Nome</label>
+                    <input type="text" id="name" name="name" required class="input">
                 </div>
                 <div class="form-texts">
-                    <label for="População" class="label">População</label>
-                    <input type="number" id="População" name="População" min="500" required class="input">
+                    <label for="preco" class="label">Preço</label>
+                    <input type="number" id="preco" name="preco" min="0" required class="input">
                 </div>
                 <div class="form-texts">
-                    <label for="Estado" class="label">Estado</label>
-                    <input type="text" id="Estado" name="Estado" required class="input">
+                    <label for="Tipo" class="label">Tipo</label>
+                    <input type="text" id="Tipo" name="Tipo" required class="input">
                 </div>
-                <div class="form-texts">
-                    <label for="País" class="label">País</label>
-                    <input type="text" id="País" name="País" required class="input">
-                </div>
-                <button type="submit" onclick="addcidade()">Criar Cidade</button>
+                <button type="submit" onclick="addproduto()">Criar Produto</button>
             </form>
         </main>
     </div>

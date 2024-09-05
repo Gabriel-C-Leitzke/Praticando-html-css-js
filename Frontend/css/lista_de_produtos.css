@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+#divgeral {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+#divnav {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    align-items: center;
+}
+#nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+        background-color: rgba(0, 0, 255, 0.5);
+        width: 20vw;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#divimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+}
+
+#image {
+    width: 10vw;
+    height: auto;
+}
+
+.divpagesbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+
+.pagesbutton {
+    font-weight: bold;
+    color: black;
+    height: 8vh;
+    width: 14vw;
+    color: white;
+    border-radius: 1.2rem;
+    background-color: rgba(0, 255, 0, 0.6);
+    border: 0.1;
+}
+.pagesbutton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 255, 0, 1);
+}
+#divsair{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    justify-content: center;
+
+}
+
+#btnsair{
+    color: white;
+    border-radius: 1.2rem;
+    height: 8vh;
+    width: 10vw;
+    background-color: rgba(255, 0, 0, 0.75);
+}
+
+#btnsair:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.Coluna_acao{
+    text-align: center;
+    gap: 1rem;
+}
+
+.btn_editar {
+    margin-bottom: 1rem;
+    height: 6vh;
+    width: 6vw;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    background-color: rgb(125, 194, 251);
+    border-color: rgb(13, 65, 113);
+  }
+  
+.btn_editar:hover {
+    background-color: rgb(179, 210, 235);
+    border-color: rgb(0, 40, 78);
+    cursor: pointer;
+  }
+  
+.btn_deletar {
+    height: 6vh;
+    width: 6vw;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    background-color: rgb(211, 79, 79);
+    border-color: rgb(125, 19, 19);
+  }
+  
+.btn_deletar:hover {
+    background-color: rgb(150, 13, 13);
+    border-color: rgb(212, 102, 102);
+    cursor: pointer;
+  }
+  
+.modalfade {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+.borda {
+    border: 3px solid red;
+}
+
+.borda2 {
+    border: 3px solid blue;
+}

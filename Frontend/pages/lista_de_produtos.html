@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cidades</title>
+    <link rel="stylesheet" href="../css/lista_de_produtos.css">
+</head>
+
+<body>
+    <div id="divgeral">
+        <div id="divnav" class="">
+            <nav id="nav">
+                <div id="divimage" class=""><img id="image" src="../assets/Logo.png" alt="" srcset=""></div>
+                <div class="divpagesbutton ">
+                    <button class="pagesbutton " onclick="paginainicial()">Página Inicial</button>
+                    <button class="pagesbutton " onclick="listadeprodutos()">Lista de Produtos</button>
+                    <button class="pagesbutton " onclick="criarproduto()">Criar Produto</button>
+                </div>
+                <div id="divsair" class="">
+                    <button class="" id="btnsair" onclick="buttonsair()">Sair</button>
+                </div>
+            </nav>
+        </div>
+        <main id="main" class="">
+            <table id="MeusProdutos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>preco</th>
+                        <th>tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="modalfade" id="editProdutoModal" tabindex="-1" aria-labelledby="editprodutoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-header">
+                            <h5 class="titulo-modal" id="labeleditarproduto">Editar Produto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="editprodutoForm">
+                              <div class="mb-3">
+                                <label for="editarNome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="editarNome" required />
+                              </div>
+                              <div class="mb-3">
+                                <label for="editarpreco" class="form-label">Preço</label>
+                                <input type="number" class="form-control" id="editarpreco" required />
+                              </div>
+                              <div class="mb-3">
+                                <label for="editartipo" class="form-label">tipo</label>
+                                <input type="text" class="form-control" id="editartipo" required />
+                              </div>
+                              <button type="submit" class="btn-primary">
+                                Atualizar Produto
+                              </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="../js/lista_de_produtos.js"></script>
+</body>
+
+</html>

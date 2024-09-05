@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="../css/criar_produto.css">
+</head>
+
+<body>
+    <div id="divgeral">
+        <div id="divnav" class="">
+            <nav id="nav">
+                <div id="divimage" class=""><img id="image" src="../assets/Logo.png" alt="" srcset=""></div>
+                <div class="divpagesbutton ">
+                    <button class="pagesbutton " onclick="paginainicial()">Página Inicial</button>
+                    <button class="pagesbutton " onclick="listadeprodutos()">Lista de Produtos</button>
+                    <button class="pagesbutton " onclick="criarproduto()">Criar Produto</button>
+                </div>
+                <div id="divsair" class="">
+                    <button class="" id="btnsair" onclick="buttonsair()">Sair</button>
+                </div>
+            </nav>
+        </div>
+        <main id="main" class="">
+            <h2 id="title" class="">Criar Cidade</h2>
+            <form class="form-criar-cidade">
+                <div class="form-texts">
+                    <label for="Nome" class="label">Nome</label>
+                    <input type="text" id="Nome" name="Nome" required class="input">
+                </div>
+                <div class="form-texts">
+                    <label for="População" class="label">População</label>
+                    <input type="number" id="População" name="População" min="500" required class="input">
+                </div>
+                <div class="form-texts">
+                    <label for="Estado" class="label">Estado</label>
+                    <input type="text" id="Estado" name="Estado" required class="input">
+                </div>
+                <div class="form-texts">
+                    <label for="País" class="label">País</label>
+                    <input type="text" id="País" name="País" required class="input">
+                </div>
+                <button type="submit" onclick="addcidade()">Criar Cidade</button>
+            </form>
+        </main>
+    </div>
+
+
+    <script src="../js/criar_produto.js"></script>
+</body>
+
+</html>

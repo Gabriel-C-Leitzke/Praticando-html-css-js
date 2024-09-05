@@ -1,0 +1,29 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#div-geral{
+display: flex;
+flex-direction: row;
+width: 100vw;
+height: 100vh;
+}
+
+#div-nav{
+    width: 20vw;
+    height: 100vh;
+}
+
+#main-geral{
+    width: 80vw;
+    height: 100vh;
+}
+
+.borda{
+    border: 3px solid red;
+}
+.borda2{
+    border: 3px solid blue;
+}
